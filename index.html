@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Reset and base styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      table, th,td{
+  border:1px solid black;
+}
+      body {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.6;
+        background-color: #f0f3f5; /* Light gray */
+        color: #333; /* Dark gray */
+        margin: 0;
+      }
+
+      .container {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #bbe9ff; /* Light blue */
+        /* padding: 20px; */
+      }
+
+      .header{
+  height:5%;
+  width:100%
+}
+
+      .company-logo {
+        height: 100%;
+      }
+
+      .content-container {
+        margin-top: 1rem;
+        width: 100%;
+        max-width: 1250px;
+        background-color: #ffffff; /* White */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px; /* Rounded corners */
+
+        img {
+          /* max-width: 100%; */
+          /* width: 45%; */
+          display: block;
+          margin: 1rem auto;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      .lesson-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #333; /* Dark gray */
+        margin-bottom: 1rem;
+        text-align: center;
+        text-decoration: underline; /* Underline style */
+      }
+      .button-container {
+  position: fixed; /* Fix the button to the screen */
+  top: 10%; /* Set distance from top */
+  right: 10%; /* Set distance from left */
+  z-index: 100; /* Ensure the button stays above other content */
+}
+      .button {
+        
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 15px;
+        background-color: #4CAF50; /* Green */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 1.4rem;
+        cursor: pointer;
+        text-align: center;
+      }
+
+      .probing-question {
+        margin-top: 1.5rem;
+        background-color: #f0f8ff; /* Light blue */
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      .probing-question div {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #444; /* Dark gray */
+        margin-bottom: 5px;
+      }
+
+      .probing-question p {
+        color: #666; /* Medium gray */
+      }
+
+      h2,
+      h3,
+      h4 {
+        color: #333; /* Dark gray */
+        margin-top: 1.5rem;
+        font-weight: bold; /* Bold font for all headings */
+      }
+
+      .learn-about {
+        background-color: palegreen;
+        border-radius: 1rem;
+        text-align: left;
+        margin: 1rem;
+        padding: 1rem 0;
+        li {
+          list-style-position: inside;
+          padding-left: 1rem;
+        }
+      }
+
+      p,
+      li {
+        color: #555; /* Medium gray */
+        font-size: 1.4rem;
+      }
+
+      ol,
+      ul {
+        margin-bottom: 1.5rem;
+        padding-left: 20px;
+      }
+      .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px; /* Optional */
+    }
+
+      hr {
+        border: none; /* Remove default border */
+        height: 2px; /* Set the height of the horizontal rule */
+        background-color: palevioletred; /* Color of the rule */
+      }
+      @media (max-width: 768px) {
+        .company-logo {
+          height: 75%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header" style="background-color:white;width:100%; box-shadow:5px 5px 10px rgb(0, 0, 0);  padding-bottom:10px;">
+        <img src="assests/logo/Logo_last.png" width="5%" style="float:left; margin-top:1.5%;" class="img-responsive">
+        <span> <img src="assests/logo/header.png" width="30%" height="80%" class="img-responsive"></span>
+      </div>
+
+      <div class="content-container">
+       
+          <div class="lesson-title">Rounding Off Integers</div>
+
+        
+          <div>
+           <h2>Rule for Rounding Off:</h2>
+            <p>
+              To round off integers, identify the digit at the place value you wish to round to and look at the digit immediately to its right.
+            </p>
+            <ul>
+              <li>If the next digit is 5 or higher, round up by increasing the digit at your rounding place by one and change all lower place values to zero.</li>
+              <li>If the next digit is less than 5, round down by keeping the digit at your rounding place the same and change all lower place values to zero.</li>
+            </ul>
+            <h3>Examples:</h3>
+            <ol>
+              <li>
+                <b>Round 438 to the nearest ten:</b>
+                <ul>
+                  <li>The ones digit is 8, so round up.</li>
+                  <li><b>Rounded result:</b> 440</li>
+                </ul>
+              </li>
+              <li>
+                <b>Round 282 to the nearest hundred:</b>
+                <ul>
+                  <li>The tens digit is 8 (greater than 5), so round up.</li>
+                  <li><b>Rounded result:</b> 300</li>
+                </ul>
+              </li>
+            </ol>
+            
+            <h2>Rounding Up Integers (Ceiling)</h2>
+            <p>
+              <b>Rule for Rounding Up:</b> When rounding up integers, increase the number to the next highest number at the rounding place value, regardless of the digits that follow.
+            </p>
+            <ul>
+              <li>
+                Change all lesser place values to zero and increase the specified place value by one, if necessary.
+              </li>
+            </ul>
+            <h3>Examples:</h3>
+            <ol>
+              <li>
+                <b>Round up 123 to the nearest ten:</b>
+                <ul>
+                  <li>Directly increase the ten's place from 2 to 3.</li>
+                  <li><b>Rounded result:</b> 130</li>
+                </ul>
+              </li>
+              <li>
+                <b>Round up 199 to the nearest hundred:</b>
+                <ul>
+                  <li>Increase the hundred's place from 1 to 2.</li>
+                  <li><b>Rounded result:</b> 200</li>
+                </ul>
+              </li>
+            </ol>
+            
+            <h2>Rounding Down Integers (Floor)</h2>
+            <p>
+              <b>Rule for Rounding Down:</b> When rounding down integers, decrease the number to the next lowest number at the rounding place value, regardless of the digits that follow.
+            </p>
+            <ul>
+              <li>
+                Change all lesser place values to zero.
+              </li>
+            </ul>
+            <h3>Examples:</h3>
+            <ol>
+              <li>
+                <b>Round down 127 to the nearest ten:</b>
+                <ul>
+                  <li>Decrease the number by ignoring the units place.</li>
+                  <li><b>Rounded result:</b> 120</li>
+                </ul>
+              </li>
+              <li>
+                <b>Round down 275 to the nearest hundred:</b>
+                <ul>
+                  <li>Keep the hundred's place as 2.</li>
+                  <li><b>Rounded result:</b> 200</li>
+                </ul>
+              </li>
+            </ol>
+            
+      </div>
+      <hr>
+      <div class="lesson-title">Rounding Off Decimals</div>
+
+        
+          <div>
+           <h2>Rule for Rounding Off:</h2>
+            <p>
+              To round off decimals, look at the digit in the decimal place you are rounding to, then check the digit immediately following it.
+            </p>
+            <ul>
+              <li>If this next digit is 5 or higher, round up by increasing the digit in the rounding place by one.</li>
+              <li>If the next digit is less than 5, round down by leaving the digit in the rounding place unchanged.</li>
+            </ul>
+            <h3>Examples:</h3>
+            <ol>
+              <li>
+                <b>Round 2.653 to the nearest tenth:</b>
+                <ul>
+                  <li>The hundredth digit is 5, so round up.</li>
+                  <li><b>Rounded result:</b> 2.7</li>
+                </ul>
+              </li>
+              <li>
+                <b>Round 3.141 to the nearest hundredth:</b>
+                <ul>
+                  <li>The thousandth digit is 1, so round down.</li>
+                  <li><b>Rounded result:</b> 3.14</li>
+                </ul>
+              </li>
+            </ol>
+            
+            <h2>Rounding Up Decimals (Ceiling)</h2>
+            <p>
+              <b>Rule for Rounding Up:</b> When rounding up decimals, regardless of the next digit, increase the last retained decimal place by one.
+            </p>
+            <ul>
+              <li>
+                This method ensures the number is never less than the original decimal.
+              </li>
+            </ul>
+            <h3>Examples(continued):</h3>
+            <ol>
+              <li>
+                <b>Round up 0.234 to the nearest tenth:</b>
+                <ul>
+                  <li>Regardless of the hundredth place being 3, round up to the next tenth.</li>
+                  <li><b>Rounded result:</b> 0.3</li>
+                </ul>
+              </li>
+              <li>
+                <b>Round up 1.115 to the nearest hundredth:</b>
+                <ul>
+                  <li>Although the thousandth place is 5, rounding up at the hundredth.</li>
+                  <li><b>Rounded result:</b> 1.12</li>
+                </ul>
+              </li>
+            </ol>
+            
+            <h2>Rounding Down Decimals (Floor)</h2>
+            <p>
+              <b>Rule for Rounding Down:</b> When rounding down decimals, drop all digits beyond the decimal place you are rounding to, regardless of what these digits are.
+            </p>
+           
+            <h3>Examples:</h3>
+            <ol>
+              <li>
+                <b>Round down 5.789 to the nearest tenth:</b>
+                <ul>
+                  <li>Ignore the digits beyond the tenth place.</li>
+                  <li><b>Rounded result:</b> 5.7</li>
+                </ul>
+              </li>
+              <li>
+                <b>Round down 2.673 to the nearest hundredth:</b>
+                <ul>
+                  <li>Ignore the thousandth place.</li>
+                  <li><b>Rounded result:</b> 2.67</li>
+                </ul>
+              </li>
+            </ol>
+            <hr>
+            <h3>Rule for Rounding Off Decimals to Nearest Integer:</h3>
+            <p>
+              To determine whether to round up or down when rounding a decimal to the nearest integer, focus on the tenths place, which is the first digit to the right of the decimal point.
+            </p>
+            <ul>
+              <li><b>If the tenths digit is 5 or higher</b>, round up the integer part (the part before the decimal) by one.</li>
+              <li><b>If the tenths digit is less than 5</b>, keep the integer part the same.</li>
+            </ul>
+            <h3>Examples:</h3>
+            <ol>
+              <li><b>Rounding 14.7 to the nearest integer:</b>
+                <ul>
+                  <li>Look at the tenths place, which is 7.</li>
+                  <li>Since 7 is greater than 5, round up.</li>
+                  <li><b>Rounded result:</b> 15</li>
+                </ul>
+              </li>
+              <li>
+                <b>Rounding 8.3 to the nearest integer:</b>
+                <ul>
+                  <li>The tenths place is 3.</li>
+                  <li>Since 3 is less than 5, keep the integer part the same.</li>
+                  <li><b>Rounded result:</b> 8</li>
+                </ul>
+              </li>
+            </ol>
+            
+      </div>
+      <div class="button-container">
+        <a href="question.html" class="button">To Practice<br>Click Next</a>
+    </div>
+    </div>
+  </body>
+</html>

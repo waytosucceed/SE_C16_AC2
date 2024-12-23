@@ -1,0 +1,112 @@
+[
+  {
+    "questionNo": "Q1",
+    "question": "Round 142 to the nearest hundred.",
+    "options": [
+      "100",
+      "140",
+      "150",
+      "200"
+    ],
+    "correct": 0
+  },
+  {
+    "questionNo": "Q2",
+    "question": "Round 3.786 to the nearest tenth.",
+    "options": [
+      "3.7",
+      "3.8",
+      "3.9",
+      "4.0"
+    ],
+    "correct": 1
+  },
+  {
+    "questionNo": "Q3",
+    "question": "Round 67.45 to the nearest integer.",
+    "options": [
+      "67",
+      "68",
+      "70",
+      "65"
+    ],
+    "correct": 0
+  },
+  {
+    "questionNo": "Q4",
+    "question": "Round 2.449 to the nearest hundredth.",
+    "options": [
+      "2.44",
+      "2.45",
+      "2.40",
+      "2.50"
+    ],
+    "correct": 1
+  },
+  {
+    "questionNo": "Q5",
+    "question": "Round 3.14159 to the nearest thousandth.",
+    "options": [
+      "3.141",
+      "3.142",
+      "3.14",
+      "3.1416"
+    ],
+    "correct": 1
+  },
+  {
+    "questionNo": "Q6",
+    "question": "Round 0.345 to the nearest tenth.",
+    "options": [
+      "0.3",
+      "0.4",
+      "0.34",
+      "0.35"
+    ],
+    "correct": 0
+  },
+  {
+    "questionNo": "Q7",
+    "question": "Round 0.999 to the nearest tenth.",
+    "options": [
+      "1.01",
+      "1.10",
+      "1.0",
+      "0.9"
+    ],
+    "correct": 2
+  },
+  {
+    "questionNo": "Q8",
+    "question": "Round 12,500 to the nearest hundred.",
+    "options": [
+      "12,500",
+      "12,600",
+      "12,000",
+      "12,400"
+    ],
+    "correct": 0
+  },
+  {
+    "questionNo": "Q9",
+    "question": "Round 0.1049 to the nearest thousandth.",
+    "options": [
+      "0.105",
+      "0.104",
+      "0.1",
+      "0.11"
+    ],
+    "correct": 0
+  },
+  {
+    "questionNo": "Q10",
+    "question": "Round -0.05 to the nearest integer.",
+    "options": [
+      "-1",
+      "0",
+      "-2",
+      "1"
+    ],
+    "correct": 1
+  }
+]
